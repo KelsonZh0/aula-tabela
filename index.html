@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+
+        tfoot {
+            background-color: aqua;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <table>
+        <!-- A tag table sever para que o HTML indentifi que estamos criando uma tabela (corpo) -->
+        <thead>
+            <!-- A tag thead (serve como cabeçalho) -->
+            <tr>
+                <!-- essa tag tr(table row) representa uma linha  -->
+                <th>Produto</th>
+                <!-- tag th é responsavel por cada coluna do cabeçalho-->
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <!-- a tag tbody representa o corpo dos dados -->
+            <tr>
+                <td>Produto 1</td>
+                <!-- a tag td (table data) é responsavel pelos dados de cada coluna  -->
+                <td>2</td>
+                <td>5$</td>
+                <td rowspan="2">Sim</td>
+                <!-- dentro das td podemos ter atributos como o rowspan tem a capacidade de expandir para ocupar outras linhas  -->
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>3</td>
+                <td>15$</td>
+                <td>Não</td>
+            </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <!-- essa tag está responsavel pelo roda pé da tabela -->
+            <tr>
+                <td colspan="3">Total</td>
+                <!-- dentro das td podemos ter atributos como o colspan tem a capacidade de expandir para ocupar outras colunas -->
+                <td>30$</td>
+            </tr>
+
+        </tfoot>
+
+
+
+    </table>
+</body>
+</html>
